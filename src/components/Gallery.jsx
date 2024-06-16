@@ -36,7 +36,7 @@ const Gallery = () => {
 
     try {
       const response = await fetch(
-        `https://api.unsplash.com/photos?client_id=${ACCESS_KEY}&page=${page}&per_page=10`
+        `https://api.unsplash.com/photos?client_id=${ACCESS_KEY}&page=${page}&per_page=20`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch images");
